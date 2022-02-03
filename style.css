@@ -9,6 +9,9 @@ body{
 .content{
     text-align: center;
     clear: both;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 60px;
 }
 
 
@@ -17,20 +20,21 @@ body{
     width:40px;
     height: 40px;
     align-content: center;
-    margin: 10px
+    margin: 10px;
+    border-radius: 3px;
 }
 
 .hamburger > div{ /* from w3schools' page for hamburger menus */
-    width: 35px;
-    height: 5px;
+    width: 30px;
+    height: 6.666px;
     background-color: #CACAC6;
-    margin: 6px auto;
+    margin: 5px 5px;
     border-radius: 2px;
 }
 
 
-.hamburger:active{
-    background-color: #AFDAF5;
+.hamburger:hover{
+    background-color: #00273d;
 }
 
 
@@ -48,6 +52,9 @@ body{
 
 .topic-list{
     position:absolute;
+    background-color: grey;
+    width: 400px;
+    height: 100vh;
 }
 
 .search-input{
@@ -56,4 +63,9 @@ body{
     width: 40%;
     border:none;
     border-radius:5px;
+}
+
+nav{
+    position: fixed;
+    width: 100%
 }
