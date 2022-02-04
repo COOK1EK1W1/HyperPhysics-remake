@@ -12,8 +12,15 @@ body{
     margin-left: 100px;
     margin-right: 100px;
     padding-top: 60px;
+    margin-bottom: 60px;
 }
 
+@media (max-width: 700px){
+    .content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
 
 
 .hamburger{
@@ -21,20 +28,24 @@ body{
     height: 40px;
     align-content: center;
     margin: 10px;
-    border-radius: 3px;
+    border-radius: 12px;
+}
+
+.hamburger:hover{
+    transform: scale(1.05);
+    background-color: #00273d;
+}
+
+.hamburger:active{
+    transform: scale(0.99);
 }
 
 .hamburger > div{ /* based on w3schools' page for hamburger menus */
-    width: 30px;
-    height: 6.666px;
+    width: 26px;
+    height: 4px;
     background-color: #CACAC6;
-    margin: 5px 5px;
+    margin: 7px;
     border-radius: 2px;
-}
-
-
-.hamburger:hover{
-    background-color: #00273d;
 }
 
 
@@ -52,7 +63,7 @@ body{
 
 .topic-list{
     position:absolute;
-    background-color: grey;
+    background-color: #AFDAF5;
     width: 400px;
     height: 100vh;
 }
@@ -70,6 +81,20 @@ nav{
     width: 100%
 }
 
+.card{
+    border-radius: 20px;
+    max-width: 800px;
+    box-shadow: 4px  4px 8px #888888;
+    background-color: white;
+    border-color: #eeeeee;
+    border-style: solid;
+    border-width: 1px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
 .disclamer{
     background-color: rgb(255, 95, 95);
     position:fixed;
@@ -77,4 +102,14 @@ nav{
     margin-top: 60px;
     height: 20px;
     text-align: center;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
 }
