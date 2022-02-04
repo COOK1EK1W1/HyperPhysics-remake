@@ -24,7 +24,7 @@ body{
     border-radius: 3px;
 }
 
-.hamburger > div{ /* from w3schools' page for hamburger menus */
+.hamburger > div{ /* based on w3schools' page for hamburger menus */
     width: 30px;
     height: 6.666px;
     background-color: #CACAC6;
@@ -68,4 +68,13 @@ body{
 nav{
     position: fixed;
     width: 100%
+}
+
+.disclamer{
+    background-color: rgb(255, 95, 95);
+    position:fixed;
+    width: 100%;
+    margin-top: 60px;
+    height: 20px;
+    text-align: center;
 }
