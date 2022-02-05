@@ -70,6 +70,12 @@ body{
     background-color: AFDAF5;
     width: 400px;
     height: 100vh;
+    left: -400px;
+    transition: 0.4s;
+}
+
+.topic-list.active{
+    left: 0px;
 }
 
 .search-input{
