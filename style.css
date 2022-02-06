@@ -132,3 +132,13 @@ a:hover {
     color: green;
     text-decoration: underline;
 }
+
+.num{
+    width: 60px;
+}
+
+.equation{
+    margin: auto;
+    width: 90%;
+    text-align: left;
+}
