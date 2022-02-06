@@ -15,7 +15,8 @@ body{
     margin-bottom: 60px;
 }
 
-@media (max-width: 700px){
+
+@media (max-width: 700px) {
     .content{
         margin-left: 10px;
         margin-right: 10px;
@@ -29,6 +30,18 @@ body{
     align-content: center;
     margin: 10px;
     border-radius: 12px;
+}
+
+.hamburger:active{
+    transform: scale(0.99);
+}
+
+.hamburger > div{ /* from w3schools' page for hamburger menus */
+    width: 26px;
+    height: 4px;
+    background-color: #CACAC6;
+    margin: 7px 7px;
+    border-radius: 2px;
 }
 
 .hamburger:hover{
@@ -66,6 +79,12 @@ body{
     background-color: #AFDAF5;
     width: 400px;
     height: 100vh;
+    left: -400px;
+    transition: 0.4s;
+}
+
+.topic-list.active{
+    left: 0px;
 }
 
 .search-input{
@@ -84,7 +103,7 @@ nav{
 .card{
     border-radius: 20px;
     max-width: 800px;
-    box-shadow: 4px  4px 8px #888888;
+    box-shadow: 4px 4px 8px #888888;
     background-color: white;
     border-color: #eeeeee;
     border-style: solid;
@@ -112,4 +131,14 @@ a:link, a:visited{
 a:hover {
     color: green;
     text-decoration: underline;
+}
+
+.num{
+    width: 60px;
+}
+
+.equation{
+    margin: auto;
+    width: 90%;
+    text-align: left;
 }
