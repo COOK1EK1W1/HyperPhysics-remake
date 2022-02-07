@@ -7,6 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="menu-nav.css"/>
         <script src="init.js"></script>
     </head>
     <body>
@@ -33,7 +34,8 @@
                 <a href="index.html"><h2 class="home-link">Home</h2></a>
                 <ul>
                     <li>Mechanics
-                        <ul><li><a href="Velocity-and-acceleration.html">Velocity and Acceleration</a></li>
+                        <ul>
+                            <li><a href="Velocity-and-acceleration.html">Velocity and Acceleration</a></li>
                             <li><a href="conservation-laws.html">Conservation Laws</a></li>
                         </ul>
                     </li>
@@ -47,11 +49,11 @@
         <div class="content" id="content"><!-- common-->
             <h1>Velocity and Acceleration</h1>
             <div class="root">
-                <a href="index.html">HyperPhysics</a>
+                <a class="inline-link" href="index.html">HyperPhysics</a>
                 > 
-                <a href="#">Mechanics</a>
+                <a class="inline-link" href="#">Mechanics</a>
                 > 
-                <a href="#">Velocity and Acceleration</a>
+                <a class="inline-link" href="#">Velocity and Acceleration</a>
             </div><!-- template common-->
             
             <div class="card">
@@ -62,7 +64,9 @@
                     <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mot.html#mot4" class="half"><img src="media/moteq1b.gif"></a>
                     <div class="half">
                         <p class="right-half">A bar above any quantity indicates that it is the average value of that quantity. If the acceleration is constant, then equations 1,2 and 3 represent a complete description of the motion. Equation 4 is obtained by a combination of the others. Click on any of the equations for an example.</p>
-                        <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mechanics/motgraph.html#c1">Graphing one-dimentional motion</a>
+                        <span class="button-link">
+                            <a class="block-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/mechanics/motgraph.html#c1">Graphing one-dimentional motion</a>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -95,7 +99,10 @@
             <div class="card">
                 <h2>Forms of Motion Equations</h2>
                 <img src="media/Moteq4.gif">
-                <a href=http://hyperphysics.phy-astr.gsu.edu/hbase/acons.html#c2>Alternate derivation using calculus</a>
+                <span class="button-link">
+                    <a href=http://hyperphysics.phy-astr.gsu.edu/hbase/acons.html#c2>Alternate derivation using calculus</a>
+                </span>
+                
             </div>
 
             <div class="card">
@@ -123,7 +130,7 @@
 
             <div class="card">
                 <h2>Linear Motion Explorer</h2>
-                <p>These <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mot.html#mot1">motion equations</a> apply only in the case of constant acceleration. It is assumed that x=0 at t=0 and that the motion is being examined at time t. After you have edited any box of motion data, click on the text or symbol for the quantity you wish to calculate. If it does not behave the way you expect, see the comments on the calculation.</p>
+                <p>These <a class="inline-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/mot.html#mot1">motion equations</a> apply only in the case of constant acceleration. It is assumed that x=0 at t=0 and that the motion is being examined at time t. After you have edited any box of motion data, click on the text or symbol for the quantity you wish to calculate. If it does not behave the way you expect, see the comments on the calculation.</p>
                 <div class="equation">
                     <label>Distance <input type="text" class="num"></label>m = 
                     <label>Velocity <input type="text" class="num"></label>m/s * 
@@ -152,5 +159,4 @@
             </div>
         </div>
     </body>
-    <script src="menu.js"></script>
 </html>

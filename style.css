@@ -19,15 +19,23 @@ html {
     scroll-behavior: smooth;
 }
 
-
 img{
     width:100%;
 }
 
-nav{
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+a:link, a:visited{
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover{
+    color: darkblue;
+    text-decoration: underline;
+}
+
+.button-link{
+    padding:10px;
+    background-color: lightgrey;
 }
 
 .content{
@@ -39,71 +47,6 @@ nav{
     margin-bottom: 60px;
 }
 
-
-.hamburger{
-    width:40px;
-    height: 40px;
-    align-content: center;
-    margin: 10px;
-    border-radius: 12px;
-    margin-left: 40px;
-}
-
-.hamburger:active{
-    transform: scale(0.99);
-}
-
-.hamburger > div{ /* from w3schools' page for hamburger menus */
-    width: 26px;
-    height: 4px;
-    background-color: #CACAC6;
-    margin: 7px 7px;
-    border-radius: 2px;
-}
-
-.hamburger:hover{
-    transform: scale(1.05);
-    background-color: #00273d;
-}
-
-.hamburger:active{
-    transform: scale(0.99);
-}
-
-.hamburger > div{ /* based on w3schools' page for hamburger menus */
-    width: 26px;
-    height: 4px;
-    background-color: #CACAC6;
-    margin: 7px;
-    border-radius: 2px;
-}
-
-
-.nav-top-bar > *{
-    float: left;
-}
-
-.nav-top-bar{
-    background-color: #003552;
-    width: 100%;
-    height: 60px;
-    display:flex;
-    justify-content: space-between;
-}
-
-.topic-list{
-    position:absolute;
-    background-color: #AFDAF5;
-    width: 400px;
-    height: 100vh;
-    left: -420px;
-    transition: 0.4s;
-    box-shadow: 4px 4px 8px #6b6b6b;
-}
-
-.topic-list.active{
-    left: 0px;
-}
 
 .search-input{
     margin: 15px;
@@ -129,24 +72,6 @@ nav{
     margin-top: 20px;
 }
 
-.disclamer{
-    background-color: rgb(255, 95, 95);
-    position:fixed;
-    width: 100%;
-    margin-top: 60px;
-    height: 20px;
-    text-align: center;
-}
-
-a:link, a:visited{
-    text-decoration: none;
-    color: blue;
-}
-
-a:hover {
-    color: darkblue;
-    text-decoration: underline;
-}
 
 .num{
     width: 60px;
@@ -164,32 +89,6 @@ a:hover {
     margin: auto;
 }
 
-.anchor {
-    position: absolute;
-    transform: translateY(-30vh);
-}
-
-.anchor:target + div{
-    animation: wobble 2s;
-}
-
-.home-link{
-    width:100%;
-    text-align: center;
-}
-
-.grey-out{
-    display:none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.4;
-}
-
-.grey-out.active{
-    display:block;
-}
 
 .split{
     justify-content: center;
@@ -206,23 +105,10 @@ a:hover {
     grid-template-columns: 200px 200px;
 }
 
-@keyframes wobble {
-    0%{transform: scale(1.00);}
-    50%{transform: scale(1.10);}
-    100%{transform: scale(1.00);}
-}
-
-
 
 @media (max-width: 700px) {
     .content{
         margin-left: 10px;
         margin-right: 10px;
     }
-
-    .topic-list{
-        width:100%;
-        left: -110%;
-    }
-
 }
