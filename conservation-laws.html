@@ -1,0 +1,126 @@
+<!DOCTYPE html><!-- common-->
+<html lang="en">
+    <head>
+        <title>HyperPhysics</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Group 17 - Ciaran Cook, Jack Whiteford, Robert Curran, Pheonix May">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+        <script src="init.js"></script>
+    </head>
+    <body>
+
+        <div class="disclamer">
+            this is not the official website &emsp;<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hph.html#hph">original</a>
+            <!--TODO add cross to dismiss disclaimer-->
+        </div>
+
+        <nav>
+            <div class="nav-top-bar">
+                <div class="hamburger" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            
+    
+                <input class="search-input" type="text" placeholder="search.." />
+                <p>TODO logo</p>
+            </div>
+
+            <div class="topic-list" id="topic-list">
+                <ul>
+                    <li>Mechanics
+                        <ul><li><a href="Velocity-and-acceleration.html">Velocity and Acceleration</a></li>
+                            <li><a href="conservation-laws.html">Conservation Laws</a></li>
+                        </ul>
+                    </li>
+                    <li>2<ul><li>bruh</li><li>bruh2</li></ul></li>
+                    <li>3<ul><li>bruh</li><li>bruh2</li></ul></li>
+                    <li>4<ul><li>bruh</li><li>bruh2</li></ul></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content" id="content"><!-- common-->
+            <h1>Conservation Laws</h1>
+            <div class="root">
+                <a href="index.html">HyperPhysics</a>
+                > 
+                <a href="#">Mechanics</a>
+                > 
+                <a href="#">Conservation Laws</a>
+            </div><!-- template common-->
+
+            <span class="anchor" id="conservation-laws"></span>
+            <div class="card">
+                <h2>Conservation Laws</h2>
+                <p>If a system does not interact with its environment in any way, then certain mechanical properties of the system cannot change. They are sometimes called "constants of the motion". These quantities are said to be "conserved" and the conservation laws which result can be considered to be the most fundamental principles of mechanics. In mechanics, examples of conserved quantities are energy, momentum, and angular momentum. The conservation laws are exact for an 
+                    <a href ="#isolated-system">isolated system</a>.
+                </p>
+                TODO link image thing
+                <p>Stated here as principles of mechanics, these conservation laws have far-reaching implications as symmetries of nature which we do not see violated. They serve as a strong constraint on any theory in any branch of science. There are other types of 
+                     <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/particles/parint.html#c1">conservation laws</a> that govern the behavior of nature in the quantum realm.</p>
+            </div>
+
+            <span class="anchor" id="conservation-momentum"></span>
+            <div class="card">
+                <h2>Conservation of Momentum</h2>
+                <p>The <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mom.html#mom">momentum</a> of an <a href="#isolated-system">isolated system</a> is a constant. The vector sum of the momenta mv of all the objects of a system cannot be changed by interactions within the system. This puts a strong constraint on the types of motions which can occur in an isolated system. If one part of the system is given a momentum in a given direction, then some other part or parts of the system must simultaneously be given exactly the same momentum in the opposite direction. As far as we can tell, conservation of momentum is an absolute symmetry of nature. That is, we do not know of anything in nature that violates it.</p>
+                TODO image /navigation
+            </div>
+
+            <span class="anchor" id="conservation-energy"></span>
+            <div class="card">
+                <h2>Conservation of Energy</h2>
+                <p>Energy can be defined as the capacity for doing <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/wcon.html">work</a>. It may exist in a variety of forms and may be transformed from one type of energy to another. However, these energy transformations are constrained by a fundamental principle, the Conservation of Energy principle. One way to state this principle is "Energy can neither be created nor destroyed". Another approach is to say that the total energy of an <a href="#isolated-system">isolated system</a> remains constant.</p>
+                TODO image / navigation
+            </div>
+
+            <span class="anchor" id="cconservation-energy-fundamental"></span>
+            <div class="card">
+                <h2>Conservation of Energy as a Fundamental Principle</h2>
+                <p>The <a href="#conservation-energy">conservation of energy</a> principle is one of the foundation principles of all science disciplines. In varied areas of science there will be primary equations which can be seen to be just an appropriate reformulation of the principle of conservation of energy.</p>
+                <div class="sub-content">
+                    <table>
+                        <tr>
+                            <td>Fluids</td>
+                            <td><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/pber.html#beq">Bernolli equation</a></td>
+                        </tr>
+                        <tr>
+                            <td>Electic Circuits</td>
+                            <td><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/electric/ohmlaw.html#c2">Voltage Law</a></td>
+                        </tr>
+                        <tr>
+                            <td>Heat and Thermodynamics</td>
+                            <td><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/thermo/firlaw.html#c1">First Law of Thermodynamics</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <span class="anchor" id="conservation-angular"></span>
+            <div class="card">
+                <h2>Conservation of Angular Momentum</h2>
+                <p>The <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/amom.html#am">angular momentum</a> of an <a href="#isolated-system">isolated system</a> remains constant in both magnitude and direction. The angular momentum is defined as the product of the <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mi.html#mi">moment of inertia</a> I and the <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/rotq.html#avel">angular velocity</a>. The angular momentum is a <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/rotv.html#rvec2">vector quantity</a> and the vector sum of the angular momenta of the parts of an isolated system is constant. This puts a strong constraint on the types of rotational motions which can occur in an isolated system. If one part of the system is given an angular momentum in a given direction, then some other part or parts of the system must simultaneously be given exactly the same angular momentum in the opposite direction. As far as we can tell, conservation of angular momentum is an absolute symmetry of nature. That is, we do not know of anything in nature that violates it.</p>
+                TODO image / navigation<br>
+                <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html">Rotating Stool Example</a>
+            </div>
+
+            <span class="anchor" id="isolated-system"></span>
+            <div class="card">
+                <h2>An Isolated System</h2>
+                <p>An isolated system implies a collection of matter which does not interact with the rest of the universe at all - and as far as we know there are really no such systems. There is no shield against <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/force.html#grav">gravity</a>, and the <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/forces/funfor.html#c3">electromagnetic force</a> is infinite in range. But in order to focus on basic principles, it is useful to postulate such a system to clarify the nature of physical laws. In particular, the conservation laws can be presumed to be exact when referring to an isolated system:</p>
+                <div class="sub-content">
+                    <p><a href="#conservation-energy">Conservation of Energy</a>: the total energy of the system is constant.</p>
+                    <p><a href="#conservation-momentum">Conservation of Momentum</a>: the mass times the velocity of the center of mass is constant.</p>
+                    <p><a href="#conservation-angular">Conservation of Angular Momentum</a>: the mass times the velocity of the center of mass is constant.</p>
+                    <p><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/newt.html#nt3">Newton's Third Law</a>: No net force can be generated within the system since all internal forces occur in opposing pairs. The acceleration of the center of mass is zero.</p>
+                </div>
+
+            </div>
+            
+        </div>
+    </body>
+    
+</html>
