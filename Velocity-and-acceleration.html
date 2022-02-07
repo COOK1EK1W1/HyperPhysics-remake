@@ -57,22 +57,26 @@
             <div class="card">
                 <h2>Description of Motion in One Dimension</h2>
                 <p>Motion is described in terms of displacement (x), time (t), velocity (v), and acceleration (a). Velocity is the rate of change of displacement and the acceleration is the rate of change of velocity. The average velocity and average acceleration are defined by the relationships:</p>
-                <!--TODO image--> image
-                <!--TODO image with link--> <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mot.html#mot4">image</a>
-                <p>A bar above any quantity indicates that it is the average value of that quantity. If the acceleration is constant, then equations 1,2 and 3 represent a complete description of the motion. Equation 4 is obtained by a combination of the others. Click on any of the equations for an example.</p>
-                <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mechanics/motgraph.html#c1">Graphing one-dimentional motion</a>
+                <img src="media/moteq1a.gif">
+                <div class="split">
+                    <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mot.html#mot4" class="half"><img src="media/moteq1b.gif"></a>
+                    <div class="half">
+                        <p class="right-half">A bar above any quantity indicates that it is the average value of that quantity. If the acceleration is constant, then equations 1,2 and 3 represent a complete description of the motion. Equation 4 is obtained by a combination of the others. Click on any of the equations for an example.</p>
+                        <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mechanics/motgraph.html#c1">Graphing one-dimentional motion</a>
+                    </div>
+                </div>
             </div>
 
             <div class="card">
                 <h2>Distance, Average Velocity and Time</h2>
                 <p>The case of motion in one dimension (one direction) is a good starting point for the description of motion. Perhaps the most intuitive relationship is that average velocity is equal to distance divided by time:</p>
-                TODO image
+                <img src="media/moteq2.gif"></img>
             </div>
 
             <div class="card">
                 <h2>Distance, Average Velocity and Time</h2>
                 <p>The case of motion in one dimension (one direction) is a good starting point for the description of motion. A basic type of calculation may be explored here by substituting numbers and then clicking on the bold text of the quantity you wish to calculate. Make only one substitution at a time and click the desired quantity -- then you can repeat with other substitutions.</p>
-                todo image
+                <img src="media/Moteq3a.gif">
                 <div class="equation">
                     <label>Distance <input type="text" class="num"></label>m = 
                     <label>Speed <input type="text" class="num"></label>m/s * 
@@ -85,27 +89,33 @@
                     <label>Final Velocity <input type="text" class="num"></label>) *
                     <label>Time <input type="text" class="num"></label>s
                 </div>
+                <img src="media/moteq3.gif">
             </div>
 
             <div class="card">
                 <h2>Forms of Motion Equations</h2>
-                TODO image
+                <img src="media/Moteq4.gif">
+                <a href=http://hyperphysics.phy-astr.gsu.edu/hbase/acons.html#c2>Alternate derivation using calculus</a>
             </div>
 
             <div class="card">
                 <h2>Forms of Motion Equations</h2>
-                TODO image
+                <img src="media/Moteq5.gif">
             </div>
 
             <div class="card">
                 <h2>Motion Example</h2>
+                <img src="media/moteq6a.gif">
                 <div class="equation">
-                    <label>Initial Velocity <input type="text" class="num"></label>m/s<br>
-                    <label>Final Velocity <input type="text" class="num"></label>m/s<br>
-                    <label>Distance Traveled <input type="text" class="num"></label>m<br>
-                    <label>Average velocity <input type="text" class="num"></label>m/s<br>
-                    <label>Acceleration <input type="text" class="num"></label>m/s/s<br>
-                    <label>Time <input type="text" class="num"></label>s<br>
+                    <grid class="split-columns">
+                        <span>Initial Velocity</span>       <span><input type="text" class="num">m/s</span>
+                        <span>Final Velocity</span>         <span><input type="text" class="num">m/s</span>
+                        <span>Distance Traveled</span>      <span><input type="text" class="num">m</span>
+                        <span>Average velocity</span>       <span><input type="text" class="num">m/s</span>
+                        <span>Acceleration</span>           <span><input type="text" class="num">s</span>
+                        <span>Time</span>                   <span><input type="text" class="num">s</span>
+                        
+                    </grid>
                     TODO check original for toggle switch, idk
                 </div>
                 <p>In this example, the items labeled on the diagram are considered primary: if one of them is changed, the others remain the same. The data in the boxes may be changed, and the calculation will be done when you click outside the box, subject to the constraints described. Changing average velocity, acceleration or time will force a change in at least one of the original quantities. In this version, the final velocity is allowed to change.</p>
@@ -113,7 +123,7 @@
 
             <div class="card">
                 <h2>Linear Motion Explorer</h2>
-                <p>These motion equations apply only in the case of constant acceleration. It is assumed that x=0 at t=0 and that the motion is being examined at time t. After you have edited any box of motion data, click on the text or symbol for the quantity you wish to calculate. If it does not behave the way you expect, see the comments on the calculation.</p>
+                <p>These <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mot.html#mot1">motion equations</a> apply only in the case of constant acceleration. It is assumed that x=0 at t=0 and that the motion is being examined at time t. After you have edited any box of motion data, click on the text or symbol for the quantity you wish to calculate. If it does not behave the way you expect, see the comments on the calculation.</p>
                 <div class="equation">
                     <label>Distance <input type="text" class="num"></label>m = 
                     <label>Velocity <input type="text" class="num"></label>m/s * 

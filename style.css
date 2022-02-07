@@ -19,6 +19,17 @@ html {
     scroll-behavior: smooth;
 }
 
+
+img{
+    width:100%;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
 .content{
     text-align: center;
     clear: both;
@@ -102,11 +113,7 @@ html {
     border-radius:5px;
 }
 
-nav{
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-}
+
 
 .card{
     border-radius: 20px;
@@ -182,6 +189,21 @@ a:hover {
 
 .grey-out.active{
     display:block;
+}
+
+.split{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.split>*{
+    width:50%;
+    min-width: 200px;
+}
+
+.split-columns{
+    display: grid;
+    grid-template-columns: 200px 200px;
 }
 
 @keyframes wobble {
