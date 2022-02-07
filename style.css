@@ -15,6 +15,10 @@ table{
     
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .content{
     text-align: center;
     clear: both;
@@ -116,10 +120,6 @@ nav{
     margin-top: 20px;
 }
 
-.card:target{
-    animation: wobble 2s;
-}
-
 .disclamer{
     background-color: rgb(255, 95, 95);
     position:fixed;
@@ -135,7 +135,7 @@ a:link, a:visited{
 }
 
 a:hover {
-    color: green;
+    color: darkblue;
     text-decoration: underline;
 }
 
@@ -153,6 +153,15 @@ a:hover {
     text-align: left;
     width: 90%;
     margin: auto;
+}
+
+.anchor {
+    position: absolute;
+    transform: translateY(-30vh);
+}
+
+.anchor:target + div{
+    animation: wobble 2s;
 }
 
 @keyframes wobble {
