@@ -110,6 +110,7 @@
                 <a class="inline-link" href="#">Velocity and Acceleration</a>
             </div><!-- template common-->
             
+            <span class="anchor" id="motion-desc-1d"></span>
             <div class="card">
                 <h2>Description of Motion in One Dimension</h2>
                 <p>Motion is described in terms of <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/posit.html#c2">displacement</a> (x), time (t), <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/vel2.html#c1">velocity</a> (v), and <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/acca.html#c1">acceleration</a> (a). Velocity is the rate of change of displacement and the acceleration is the rate of change of velocity. The average velocity and average acceleration are defined by the relationships:</p>
@@ -125,31 +126,34 @@
                 </div>
             </div>
 
+            <span class="anchor" id="dist-avg-vel-time"></span>
             <div class="card">
                 <h2>Distance, Average Velocity and Time</h2>
                 <p>The case of motion in one dimension (one direction) is a good starting point for the description of motion. Perhaps the most intuitive relationship is that average velocity is equal to distance divided by time:</p>
                 <img src="media/moteq2.gif"></img>
             </div>
 
+            <span class="anchor" id="dist-avg-vel-time2"></span>
             <div class="card">
                 <h2>Distance, Average Velocity and Time</h2>
                 <p>The case of motion in one dimension (one direction) is a good starting point for the description of motion. A basic type of calculation may be explored here by substituting numbers and then clicking on the bold text of the quantity you wish to calculate. Make only one substitution at a time and click the desired quantity -- then you can repeat with other substitutions.</p>
                 <img src="media/Moteq3a.gif">
                 <div class="equation">
-                    <label>Distance <input type="text" class="num"></label>m = 
-                    <label>Speed <input type="text" class="num"></label>m/s * 
-                    <label>Time <input type="text" class="num"></label>s
+                    <label class="data-inp">Distance<br><input type="text" class="num"></label>m = 
+                    <label class="data-inp">Speed<br><input type="text" class="num"></label>m/s x
+                    <label class="data-inp">Time<br><input type="text" class="num"></label>s
                 </div>
                 <br>
                 <div class="equation">
-                    <label>Distance <input type="text" class="num"></label>m = 
-                    (<label>Initial Velocity <input type="text" class="num"></label>m/s + 
-                    <label>Final Velocity <input type="text" class="num"></label>) *
-                    <label>Time <input type="text" class="num"></label>s
+                    <label class="data-inp">Distance<br><input type="text" class="num"></label>m = 
+                    (<label class="data-inp">Initial Velocity<br><input type="text" class="num"></label>m/s + 
+                    <label class="data-inp">Final Velocity<br><input type="text" class="num"></label>) x
+                    <label class="data-inp">Time<br><input type="text" class="num"></label>s
                 </div>
                 <img src="media/moteq3.gif">
             </div>
 
+            <span class="anchor" id="forms-of-motion-equ"></span>
             <div class="card">
                 <h2>Forms of Motion Equations</h2>
                 <img src="media/Moteq4.gif">
@@ -159,6 +163,7 @@
                 
             </div>
 
+            <span class="anchor" id="forms-of-motion-equ2"></span>
             <div class="card">
                 <h2>Forms of Motion Equations</h2>
                 <img src="media/Moteq5.gif">
@@ -182,9 +187,10 @@
                 <p>In this example, the items labeled on the diagram are considered primary: if one of them is changed, the others remain the same. The data in the boxes may be changed, and the calculation will be done when you click outside the box, subject to the constraints described. Changing average velocity, acceleration or time will force a change in at least one of the original quantities. In this version, the final velocity is allowed to change.</p>
             </div>
 
+            <span class="anchor" id="lin-motion-explorer"></span>
             <div class="card">
                 <h2>Linear Motion Explorer</h2>
-                <p>These <a class="inline-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/mot.html#mot1">motion equations</a> apply only in the case of constant acceleration. It is assumed that x=0 at t=0 and that the motion is being examined at time t. After you have edited any box of motion data, click on the text or symbol for the quantity you wish to calculate. If it does not behave the way you expect, see the comments on the calculation.</p>
+                <p>These <a class="inline-link" href="#motion-desc-1d">motion equations</a> apply only in the case of constant acceleration. It is assumed that x=0 at t=0 and that the motion is being examined at time t. After you have edited any box of motion data, click on the text or symbol for the quantity you wish to calculate. If it does not behave the way you expect, see the comments on the calculation.</p>
                 <div class="equation">
                     <label class="data-inp">Distance <br><input type="text" class="num"></label>m = 
                     <label class="data-inp">Velocity <br><input type="text" class="num"></label>m/s * 
@@ -205,9 +211,10 @@
                 </div>
             </div>
 
+            <span class="anchor" id="comments-on-motion"></span>
             <div class="card">
                 <h2>Comments on Motion Explorer</h2>
-                <p>In the example <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mot.html#motexp">motion calculation</a>, some assumptions are made about the calculation order. It is intended to be an exploration exercise, and may not conveniently solve all problems. The <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mot.html#mot1">motion equations</a> represent a complete set of equations for constant acceleration motion, but in certain types of problems, intermediate results must be calculated before proceeding to the final calculation. In the example calculation, you may have to do intermediate calculations, e.g., to establish the final velocity, in order to set up the problem you wish to solve, just as if you were working the problem with calculator and paper.</p>
+                <p>In the example <a href="#lin-motion-explorer">motion calculation</a>, some assumptions are made about the calculation order. It is intended to be an exploration exercise, and may not conveniently solve all problems. The <a href="#motion-desc-1d">motion equations</a> represent a complete set of equations for constant acceleration motion, but in certain types of problems, intermediate results must be calculated before proceeding to the final calculation. In the example calculation, you may have to do intermediate calculations, e.g., to establish the final velocity, in order to set up the problem you wish to solve, just as if you were working the problem with calculator and paper.</p>
 
                 <p>In the example calculation, the time, initial velocity, and displacement were considered given (primary) unless they were being calculated . For example,if x is being calculated, then v is assumed given, so it must be calculated first if you want to specify a. After making substitutions, not all values are updated, so to be sure a specific parameter has been updated, click on the text or symbol associated with that parameter.</p>
             </div>
