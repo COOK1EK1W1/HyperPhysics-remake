@@ -1,10 +1,10 @@
 function toggleMenu(){
-    document.getElementById("topic-list").classList.toggle("active");
+    document.getElementById("slide-menu").classList.toggle("active");
     document.getElementById("grey-out").classList.toggle("active");
 }
 
 function closeMenu(){
-    document.getElementById("topic-list").classList.remove("active");
+    document.getElementById("slide-menu").classList.remove("active");
     document.getElementById("grey-out").classList.remove("active");
 }
 

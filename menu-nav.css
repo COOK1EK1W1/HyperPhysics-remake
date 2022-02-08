@@ -4,7 +4,7 @@ nav{
     z-index: 1;
 }
 
-#topic-list-list {
+#topic-list {
     overflow-y: auto;
     height:80%;
 }
@@ -38,7 +38,7 @@ ul{
     display: block;
 }
 
-ul#topic-list-list>li, ul.nested>li{
+ul#topic-list>li, ul.nested>li{
     padding:10px;
 }
 
@@ -83,7 +83,7 @@ ul#topic-list-list>li, ul.nested>li{
 }
 
 
-.topic-list{
+.slide-menu{
     position:absolute;
     background-color: #AFDAF5;
     width: 400px;
@@ -93,7 +93,7 @@ ul#topic-list-list>li, ul.nested>li{
     box-shadow: 4px 4px 8px #6b6b6b;
 }
 
-.topic-list.active{
+.slide-menu.active{
     left: 0px;
 }
 
@@ -146,7 +146,7 @@ ul#topic-list-list>li, ul.nested>li{
 
 
 @media (max-width: 700px) {    
-    .topic-list{
+    .slide-menu{
         width:100%;
         left: -110%;
     }
