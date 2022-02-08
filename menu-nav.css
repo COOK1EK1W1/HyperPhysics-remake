@@ -4,11 +4,49 @@ nav{
     z-index: 1;
 }
 
+#topic-list-list {
+    overflow-y: auto;
+    height:80%;
+}
+
+ul{
+    list-style-type: none;
+}
+  
+.arrow {
+    cursor: pointer;
+    user-select: none;
+}
+  
+.arrow::before {
+    transition: 0.1s;
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+  
+.arrow-down::before {
+    transform: rotate(90deg);  
+}
+  
+.nested {
+    display: none;
+}
+  
+.active {
+    display: block;
+}
+
+ul#topic-list-list>li, ul.nested>li{
+    padding:10px;
+}
 
 .nav-top-bar{
+    --nav-height: 60px;
     background-color: #003552;
     width: 100%;
-    height: 60px;
+    height: var(--nav-height);
     display:flex;
     justify-content: space-between;
 }

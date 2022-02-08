@@ -29,19 +29,73 @@
                 <input class="search-input" type="text" placeholder="search.." />
                 <p>TODO logo</p>
             </div>
-
             <div class="topic-list" id="topic-list">
                 <a href="index.html"><h2 class="home-link">Home</h2></a>
-                <ul>
-                    <li>Mechanics
-                        <ul>
-                            <li><a href="Velocity-and-acceleration.html">Velocity and Acceleration</a></li>
-                            <li><a href="conservation-laws.html">Conservation Laws</a></li>
+                <ul id="topic-list-list">
+                    <li><span class="arrow">Mechanics</span>
+                        <ul class="nested">
+                            <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/circ.html#circ">Circular Motion</a></li>
+                            <li><a href="conservation-laws.html">* Conservation Laws</a></li>
+                            <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/force.html#defor">Forces</a></li>
+                            <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/fluid.html#flucon">Fuilds</a></li>
+                            <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/grav.html#grav">Gravity</a></li>
+                            <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mass.html#mas">Mass</a></li>
+                            <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/newt.html#ntcon">Newton's Laws</a></li>
+                            <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/orbit.html#orbcon">Orbits</a></li>
+                            <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/permot.html#permot">Periodic Motion</a></li>
+                            <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/units.html#unit">Physical Units</a></li>
+                            <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/solcon.html#solcon">Solids</a></li>
+                            <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/torq.html#torq">Torques</a></li>
+                            <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/vect.html#veccon">Vector Operations</a></li>
+                            <li><a href="Velocity-and-acceleration.html">* Velocity and Acceleration</a></li>
+                            <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/work.html#wep">Work, Energy and Power</a></li>
                         </ul>
                     </li>
-                    <li>2<ul><li>bruh</li><li>bruh2</li></ul></li>
-                    <li>3<ul><li>bruh</li><li>bruh2</li></ul></li>
-                    <li>4<ul><li>bruh</li><li>bruh2</li></ul></li>
+                    <li><span class="arrow">Electricity and Magnetism</span>
+                        <ul class="nested">
+                            <li><a href="">placeholder</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="arrow">Light and Vision</span>
+                        <ul class="nested">
+                            <li><a href="">placeholder</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="arrow">Sound and Hearing</span>
+                        <ul class="nested">
+                            <li><a href="">placeholder</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="arrow">Relativity</span>
+                        <ul class="nested">
+                            <li><a href="">placeholder</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="arrow">Astrophysics</span>
+                        <ul class="nested">
+                            <li><a href="">placeholder</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="arrow">Quantum Physics</span>
+                        <ul class="nested">
+                            <li><a href="">placeholder</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="arrow">Nuclear Physics</span>
+                        <ul class="nested">
+                            <li><a href="">placeholder</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="arrow">Condensed Metter</span>
+                        <ul class="nested">
+                            <li><a href="">placeholder</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="arrow">Heat and Thermodynamics</span>
+                        <ul class="nested">
+                            <li><a href="">placeholder</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -62,7 +116,12 @@
                 <p>If a system does not interact with its environment in any way, then certain mechanical properties of the system cannot change. They are sometimes called "constants of the motion". These quantities are said to be "conserved" and the conservation laws which result can be considered to be the most fundamental principles of mechanics. In mechanics, examples of conserved quantities are energy, momentum, and angular momentum. The conservation laws are exact for an 
                     <a href ="#isolated-system">isolated system</a>.
                 </p>
-                TODO link image thing
+                <h3>Fundamental Principles</h3>
+                <div class="bubble-web">
+                    <a class="button-link" href="#conservation-momentum">Conservation of Momentum</a>
+                    <a class="button-link" href="#conservation-energy">Conservation of Energy</a>
+                    <a class="button-link" href="#conservation-angular">Conservation of Angular Momentum</a>
+                </div>
                 <p>Stated here as principles of mechanics, these conservation laws have far-reaching implications as symmetries of nature which we do not see violated. They serve as a strong constraint on any theory in any branch of science. There are other types of 
                      <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/particles/parint.html#c1">conservation laws</a> that govern the behavior of nature in the quantum realm.</p>
             </div>
@@ -71,14 +130,22 @@
             <div class="card">
                 <h2>Conservation of Momentum</h2>
                 <p>The <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mom.html#mom">momentum</a> of an <a href="#isolated-system">isolated system</a> is a constant. The vector sum of the momenta mv of all the objects of a system cannot be changed by interactions within the system. This puts a strong constraint on the types of motions which can occur in an isolated system. If one part of the system is given a momentum in a given direction, then some other part or parts of the system must simultaneously be given exactly the same momentum in the opposite direction. As far as we can tell, conservation of momentum is an absolute symmetry of nature. That is, we do not know of anything in nature that violates it.</p>
-                TODO image /navigation
+                <div class="bubble-web">
+                    <label>Is a tool for analysing<a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/colcon.html#c1">Collisions</a></label>
+                    <label>Applies to<a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/conser.html#conmom">Momentum</a></label>
+                    <label>Allows momentum changes for<a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/rocket.html#c1">Systems with External Focrces</a></label>
+                </div>
             </div>
 
             <span class="anchor" id="conservation-energy"></span>
             <div class="card">
                 <h2>Conservation of Energy</h2>
                 <p>Energy can be defined as the capacity for doing <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/wcon.html">work</a>. It may exist in a variety of forms and may be transformed from one type of energy to another. However, these energy transformations are constrained by a fundamental principle, the Conservation of Energy principle. One way to state this principle is "Energy can neither be created nor destroyed". Another approach is to say that the total energy of an <a href="#isolated-system">isolated system</a> remains constant.</p>
-                TODO image / navigation
+                <div class="bubble-web">
+                    <label>Einstein's Caveat:<a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/relativ/releng.html#c1">Mass Energy</a></label>
+                    <label>A powerful tool for:<a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/flobj.html#c1">Mechanics problem Solving</a></label>
+                    <label>With external forces:<a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/work.html#wepr">Work Energy Principle</a></label>
+                </div>
             </div>
 
             <span class="anchor" id="cconservation-energy-fundamental"></span>
@@ -107,8 +174,13 @@
             <div class="card">
                 <h2>Conservation of Angular Momentum</h2>
                 <p>The <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/amom.html#am">angular momentum</a> of an <a href="#isolated-system">isolated system</a> remains constant in both magnitude and direction. The angular momentum is defined as the product of the <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mi.html#mi">moment of inertia</a> I and the <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/rotq.html#avel">angular velocity</a>. The angular momentum is a <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/rotv.html#rvec2">vector quantity</a> and the vector sum of the angular momenta of the parts of an isolated system is constant. This puts a strong constraint on the types of rotational motions which can occur in an isolated system. If one part of the system is given an angular momentum in a given direction, then some other part or parts of the system must simultaneously be given exactly the same angular momentum in the opposite direction. As far as we can tell, conservation of angular momentum is an absolute symmetry of nature. That is, we do not know of anything in nature that violates it.</p>
-                TODO image / navigation<br>
-                <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html">Rotating Stool Example</a>
+                <div class="bubble-web">
+                    <label>Applies to<a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/amom.html#am">Angular Momentum</a></label>
+                    <label>aids analysis of<a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/circ.html#rotcon">Rotating Objects</a></label>
+                    <label>Involves<a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/rotv.html#rvec2">Vector Properties</a></label>
+                </div>
+                <hr>
+                <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/rstoo.html#sm">Rotating Stool Example</a>
             </div>
 
             <span class="anchor" id="isolated-system"></span>

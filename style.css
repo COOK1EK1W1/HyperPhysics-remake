@@ -9,6 +9,10 @@ body{
 table, th, td{
     border:1px solid black;
 }
+
+th, td{
+    padding:5px;
+}
 table{
     border-collapse:collapse; 
     width:100%; 
@@ -36,6 +40,12 @@ a:hover{
 .button-link{
     padding:10px;
     background-color: lightgrey;
+    margin:2px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    display:block;
 }
 
 .content{
@@ -105,6 +115,15 @@ a:hover{
     grid-template-columns: 200px 200px;
 }
 
+.data-inp{
+    display:inline-block;
+}
+
+.bubble-web{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
 @media (max-width: 700px) {
     .content{
