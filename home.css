@@ -5,7 +5,8 @@
 
 
 h1{
-    padding-top: calc(25vh - 100px);
+    padding-top: calc(20vh - 120px);
+    font-size: 60px;
 }
 
 .big-logo{
@@ -44,6 +45,10 @@ h1{
     .content{
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    h1{
+        font-size: 30px;
     }
 }
 
