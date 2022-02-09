@@ -1,0 +1,50 @@
+
+.content{
+    padding-top: 120px;
+}
+
+
+h1{
+    padding-top: calc(25vh - 100px);
+}
+
+.big-logo{
+    height: 200px;
+    width: 200px;
+    padding-bottom: calc(25vh - 100px);
+}
+
+@media (min-width: 700px){
+    .hamburger{
+        display: none;
+    }
+    .small-logo{
+        display: none;
+    }
+
+    .slide-menu{
+        left: 0;
+        box-shadow: none;
+    }
+
+    .card-title{
+        margin-bottom: 50px;
+    } 
+
+    .content{
+        padding-left: 400px;
+    }
+    .nav-top-bar{
+        justify-content: space-around;
+    }
+
+}
+
+@media(max-width: 900px){
+    .content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+
