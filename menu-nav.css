@@ -137,6 +137,13 @@ ul#topic-list>li, ul.nested>li{
     animation: wobble 2s;
 }
 
+.small-logo{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    margin-right: 40px;
+}
+
 @keyframes wobble {
     0%{transform: scale(1.00);}
     50%{transform: scale(1.10);}

@@ -10,7 +10,7 @@ h1{
 }
 
 .big-logo{
-    height: 200px;
+    height: 153px;
     width: 200px;
     padding-bottom: calc(25vh - 100px);
 }
@@ -19,8 +19,9 @@ h1{
     .hamburger{
         display: none;
     }
-    .small-logo{
-        display: none;
+
+    .logo-link{
+        display: none
     }
 
     .slide-menu{
