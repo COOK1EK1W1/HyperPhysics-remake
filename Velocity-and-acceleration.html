@@ -11,12 +11,6 @@
         <script src="init.js"></script>
     </head>
     <body>
-
-        <div class="disclamer">
-            this is not the official website &emsp;<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hph.html#hph">original</a>
-            <!--TODO add cross to dismiss disclaimer-->
-        </div>
-
         <nav>
             <div class="nav-top-bar">
                 <div class="hamburger" id="hamburger">
@@ -119,11 +113,10 @@
                     <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mot.html#mot4" class="half"><img src="media/moteq1b.gif"></a>
                     <div class="half">
                         <p class="right-half">A bar above any quantity indicates that it is the average value of that quantity. If the acceleration is constant, then equations 1,2 and 3 represent a complete description of the motion. Equation 4 is obtained by a combination of the others. Click on any of the equations for an example.</p>
-                        <span class="button-link">
-                            <a class="block-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/mechanics/motgraph.html#c1">Graphing one-dimentional motion</a>
-                        </span>
                     </div>
                 </div>
+                <hr>
+                <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/mechanics/motgraph.html#c1">Graphing one-dimentional motion</a>
             </div>
 
             <span class="anchor" id="dist-avg-vel-time"></span>
@@ -138,7 +131,7 @@
                 <h2>Distance, Average Velocity and Time</h2>
                 <p>The case of motion in one dimension (one direction) is a good starting point for the description of motion. A basic type of calculation may be explored here by substituting numbers and then clicking on the bold text of the quantity you wish to calculate. Make only one substitution at a time and click the desired quantity -- then you can repeat with other substitutions.</p>
                 <img src="media/Moteq3a.gif">
-                <div class="equation">
+                <div class="sub-content">
                     <label class="data-inp">Distance<br><input id="distance1" type="text" class="num"></label>m = 
                     <label class="data-inp">Speed<br><input id="speed" type="text" class="num"></label>m/s x
                     <label class="data-inp">Time<br><input id="time1" type="text" class="num"></label>s
@@ -146,7 +139,7 @@
 					<input type="button" onclick="averageVelocity1()" value="Calculate">
                 </div>
                 <br>
-                <div class="equation">
+                <div class="sub-content">
                     <label class="data-inp">Distance<br><input id="distance2" type="text" class="num"></label>m = 
                     (<label class="data-inp">Initial Velocity<br><input id="initVelo1" type="text" class="num"></label>m/s + 
                     <label class="data-inp">Final Velocity<br><input id="finalVelo1" type="text" class="num"></label>) x
@@ -213,9 +206,7 @@
             <div class="card">
                 <h2>Forms of Motion Equations</h2>
                 <img src="media/Moteq4.gif">
-                <span class="button-link">
-                    <a href=http://hyperphysics.phy-astr.gsu.edu/hbase/acons.html#c2>Alternate derivation using calculus</a>
-                </span>
+                <a class="button-link" href=http://hyperphysics.phy-astr.gsu.edu/hbase/acons.html#c2>Alternate derivation using calculus</a>
                 
             </div>
 
@@ -223,14 +214,14 @@
             <div class="card">
                 <h2>Linear Motion Explorer</h2>
                 <p>These <a class="inline-link" href="#motion-desc-1d">motion equations</a> apply only in the case of constant acceleration. It is assumed that x=0 at t=0 and that the motion is being examined at time t. After you have edited any box of motion data, click on the text or symbol for the quantity you wish to calculate. If it does not behave the way you expect, see the comments on the calculation.</p>
-                <div class="equation">
+                <div class="sub-content">
                     <label class="data-inp">Distance <br><input id="distance3" type="text" class="num"></label>m = 
                     <label class="data-inp">Velocity <br><input id="velo1" type="text" class="num"></label>m/s * 
                     <label class="data-inp">Time <br><input id="time3" type="text" class="num"> </labe>s
 					&nbsp&nbsp
 					<input type="button" onclick="linMotion1()" value="Calculate">
                 </div><br>
-                <div class="equation">
+                <div class="sub-content">
                     <label class="data-inp">Velocity<br><input id="velo2" type="text" class="num"></label>m/s = 
                     <label class="data-inp">Initial Velocity<br><input id="initVelo2" type="text" class="num"></label> m/s +
                     <label class="data-inp">Acceleration<br><input id="accel1" type="text" class="num"></label> m/s/s *
@@ -238,7 +229,7 @@
 					&nbsp&nbsp
 					<input type="button" onclick="linMotion2()" value="Calculate">
                 </div><br>
-                <div class="equation">
+                <div class="sub-content">
                     <label class="data-inp">Displacement<br><input id="displacement" type="text" class="num"></label>m =
                     <label class="data-inp">Inital Velocity<br><input id="initVelo3" type="text" class="num"></label>m/s * 
                     <label class="data-inp">Time<br><input id="time5" type="text" class="num"></label>s + 1/2

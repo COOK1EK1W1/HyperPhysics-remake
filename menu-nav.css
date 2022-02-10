@@ -4,31 +4,11 @@ nav{
     z-index: 1;
 }
 
-#topic-list {
-    overflow-y: auto;
-    height:80%;
-}
-
 ul{
     list-style-type: none;
 }
-  
-.arrow {
-    cursor: pointer;
-    user-select: none;
-}
-  
-.arrow::before {
-    transition: 0.1s;
-    content: "\25B6";
-    color: black;
-    display: inline-block;
-    margin-right: 6px;
-}
-  
-.arrow-down::before {
-    transform: rotate(90deg);  
-}
+
+
   
 .nested {
     display: none;
@@ -38,15 +18,17 @@ ul{
     display: block;
 }
 
-ul#topic-list>li, ul.nested>li{
-    padding:10px;
-}
+
+
+
+
+/**************top bar nav**************/
+
 
 .nav-top-bar{
-    --nav-height: 60px;
     background-color: #003552;
     width: 100%;
-    height: var(--nav-height);
+    height: var(60px);
     display:flex;
     justify-content: space-between;
 }
@@ -55,7 +37,6 @@ ul#topic-list>li, ul.nested>li{
     float: left;
 }
 
-
 .hamburger{
     width:40px;
     height: 40px;
@@ -63,10 +44,6 @@ ul#topic-list>li, ul.nested>li{
     margin: 10px;
     border-radius: 12px;
     margin-left: 40px;
-}
-
-.hamburger:active{
-    transform: scale(0.99);
 }
 
 .hamburger > div{ /* from w3schools' page for hamburger menus */
@@ -82,7 +59,29 @@ ul#topic-list>li, ul.nested>li{
     background-color: #00273d;
 }
 
+.hamburger:active{
+    transform: scale(0.99);
+}
 
+.search-input{
+    margin: 15px;
+    height: 30px;
+    width: 40%;
+    border:none;
+    border-radius:5px;
+}
+
+.small-logo{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    margin-right: 40px;
+}
+
+
+
+
+/*************slide menu**************/
 .slide-menu{
     position:absolute;
     background-color: #AFDAF5;
@@ -110,6 +109,10 @@ ul#topic-list>li, ul.nested>li{
     display:block;
 }
 
+#topic-list {
+    overflow-y: auto;
+    height:80%;
+}
 
 .home-link{
     width:100%;
@@ -117,32 +120,55 @@ ul#topic-list>li, ul.nested>li{
 }
 
 
-.disclamer{
-    background-color: rgb(255, 95, 95);
-    position:fixed;
-    width: 100%;
-    margin-top: 60px;
-    height: 20px;
-    text-align: center;
+/*************slide menu indexs**************/
+
+ul.nested>li>a{
+    display: block;
+    padding:10px;
+}
+ul.nested>li>a:hover{
+    transition: 0.3s;
+}
+
+.arrow {
+    transition: 0.3s;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    padding: 10px;
+}
+  
+.arrow::before {
+    transition: 0.1s;
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.arrow:hover{
+    transform: translate(4px,0);
+}
+  
+.arrow-down::before {
+    transform: rotate(90deg);  
 }
 
 
 
+/*************General Link stuffs**************/
+
 .anchor {
     position: absolute;
-    transform: translateY(-30vh);
+    transform: translateY(-100px);
 }
 
 .anchor:target + div{
     animation: wobble 2s;
 }
 
-.small-logo{
-    width: 40px;
-    height: 40px;
-    margin: 10px;
-    margin-right: 40px;
-}
+
+/*************Animations**************/
 
 @keyframes wobble {
     0%{transform: scale(1.00);}
@@ -150,6 +176,7 @@ ul#topic-list>li, ul.nested>li{
     100%{transform: scale(1.00);}
 }
 
+/*************Media**************/
 
 
 @media (max-width: 700px) {    

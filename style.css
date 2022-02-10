@@ -27,15 +27,19 @@ img{
     width:100%;
 }
 
+a{
+    transition: 0.2s;
+}
 a:link, a:visited{
     text-decoration: none;
-    color: blue;
+    color: rgb(64, 64, 255);
 }
 
 a:hover{
-    color: darkblue;
     text-decoration: underline;
+    transform: scale(1.02);
 }
+
 
 .button-link{
     padding:10px;
@@ -46,6 +50,7 @@ a:hover{
     margin-right: auto;
     border-radius: 20px;
     display:block;
+    box-shadow: 1px 1px 3px #888888;
 }
 
 .content{
@@ -55,15 +60,6 @@ a:hover{
     margin-right: 100px;
     padding-top: 60px;
     margin-bottom: 60px;
-}
-
-
-.search-input{
-    margin: 15px;
-    height: 30px;
-    width: 40%;
-    border:none;
-    border-radius:5px;
 }
 
 
