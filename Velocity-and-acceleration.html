@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="menu-nav.css"/>
         <script src="init.js"></script>
+        <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script>
     </head>
     <body>
 
@@ -139,18 +140,74 @@
                 <p>The case of motion in one dimension (one direction) is a good starting point for the description of motion. A basic type of calculation may be explored here by substituting numbers and then clicking on the bold text of the quantity you wish to calculate. Make only one substitution at a time and click the desired quantity -- then you can repeat with other substitutions.</p>
                 <img src="media/Moteq3a.gif">
                 <div class="equation">
-                    <label class="data-inp">Distance<br><input type="text" class="num"></label>m = 
-                    <label class="data-inp">Speed<br><input type="text" class="num"></label>m/s x
-                    <label class="data-inp">Time<br><input type="text" class="num"></label>s
+                    <label class="data-inp">Distance<br><input id="distance1" type="text" class="num"></label>m = 
+                    <label class="data-inp">Speed<br><input id="speed" type="text" class="num"></label>m/s x
+                    <label class="data-inp">Time<br><input id="time1" type="text" class="num"></label>s
+					&nbsp&nbsp
+					<input type="button" onclick="averageVelocity1()" value="Calculate">
                 </div>
                 <br>
                 <div class="equation">
-                    <label class="data-inp">Distance<br><input type="text" class="num"></label>m = 
-                    (<label class="data-inp">Initial Velocity<br><input type="text" class="num"></label>m/s + 
-                    <label class="data-inp">Final Velocity<br><input type="text" class="num"></label>) x
-                    <label class="data-inp">Time<br><input type="text" class="num"></label>s
+                    <label class="data-inp">Distance<br><input id="distance2" type="text" class="num"></label>m = 
+                    (<label class="data-inp">Initial Velocity<br><input id="initVelo1" type="text" class="num"></label>m/s + 
+                    <label class="data-inp">Final Velocity<br><input id="finalVelo1" type="text" class="num"></label>) x
+                    <label class="data-inp">Time<br><input id="time2" type="text" class="num"></label>s  / 2
+					&nbsp&nbsp
+					<input type="button" onclick="averageVelocity2()" value="Calculate">
                 </div>
                 <img src="media/moteq3.gif">
+				
+				<script>
+					const distance1 = document.getElementById("distance1");
+					const speed = document.getElementById("speed");
+					const time1 = document.getElementById("time1");
+					function averageVelocity1()
+					{
+						if(isNaN(speed.value) || speed.value == "")
+						{
+							var values = parseFloat(distance1.value) / parseFloat(time1.value);
+							speed.value = values;
+						}
+						else if(isNaN(time1.value) || time1.value == "")
+						{
+							var values = parseFloat(distance1.value) / parseFloat(speed.value);
+							time1.value = values;
+						}
+						else
+						{
+							var values = parseFloat(speed.value) * parseFloat(time1.value);
+							distance1.value = values;
+						}
+					}
+					
+					const distance2 = document.getElementById("distance2");
+					const initVelo1 = document.getElementById("initVelo1");
+					const finalVelo1 = document.getElementById("finalVelo1");
+					const time2 = document.getElementById("time2");
+					function averageVelocity2()
+					{
+						if(isNaN(initVelo1.value) || initVelo1.value == "")
+						{
+							var values = parseFloat(distance2.value) / parseFloat(time2.value) * 2 - parseFloat(finalVelo1.value);
+							initVelo1.value = values;
+						}
+						else if(isNaN(finalVelo1.value) || finalVelo1.value == "")
+						{
+							var values = parseFloat(distance2.value) / parseFloat(time2.value) * 2 - parseFloat(initVelo1.value);
+							finalVelo1.value = values;
+						}
+						else if(isNaN(time2.value) || time2.value == "")
+						{
+							var values = parseFloat(distance2.value) / (parseFloat(initVelo1.value) + parseFloat(finalVelo1.value)) * 2;
+							time2.value = values;
+						}
+						else
+						{
+							var values = (parseFloat(initVelo1.value) + parseFloat(finalVelo1.value)) * parseFloat(time2.value) / 2;
+							distance2.value = values;
+						}
+					}
+				</script>
             </div>
 
             <span class="anchor" id="forms-of-motion-equ"></span>
@@ -163,34 +220,117 @@
                 
             </div>
 
-            <span class="anchor" id="forms-of-motion-equ2"></span>
-            <div class="card">
-                <h2>Forms of Motion Equations</h2>
-                <img src="media/Moteq5.gif">
-            </div>
-
             <span class="anchor" id="lin-motion-explorer"></span>
             <div class="card">
                 <h2>Linear Motion Explorer</h2>
                 <p>These <a class="inline-link" href="#motion-desc-1d">motion equations</a> apply only in the case of constant acceleration. It is assumed that x=0 at t=0 and that the motion is being examined at time t. After you have edited any box of motion data, click on the text or symbol for the quantity you wish to calculate. If it does not behave the way you expect, see the comments on the calculation.</p>
                 <div class="equation">
-                    <label class="data-inp">Distance <br><input type="text" class="num"></label>m = 
-                    <label class="data-inp">Velocity <br><input type="text" class="num"></label>m/s * 
-                    <label class="data-inp">Time <br><input type="text" class="num"> </labe>s
+                    <label class="data-inp">Distance <br><input id="distance3" type="text" class="num"></label>m = 
+                    <label class="data-inp">Velocity <br><input id="velo1" type="text" class="num"></label>m/s * 
+                    <label class="data-inp">Time <br><input id="time3" type="text" class="num"> </labe>s
+					&nbsp&nbsp
+					<input type="button" onclick="linMotion1()" value="Calculate">
                 </div><br>
                 <div class="equation">
-                    <label class="data-inp">Velocity<br><input type="text" class="num"></label>m/s = 
-                    <label class="data-inp">Initial Velocity<br><input type="text" class="num"></label> m/s +
-                    <label class="data-inp">Acceleration<br><input type="text" class="num"></label> m/s/s *
-                    <label class="data-inp">Time<br><input type="text" class="num"></label>s
+                    <label class="data-inp">Velocity<br><input id="velo2" type="text" class="num"></label>m/s = 
+                    <label class="data-inp">Initial Velocity<br><input id="initVelo2" type="text" class="num"></label> m/s +
+                    <label class="data-inp">Acceleration<br><input id="accel1" type="text" class="num"></label> m/s/s *
+                    <label class="data-inp">Time<br><input id="time4" type="text" class="num"></label>s
+					&nbsp&nbsp
+					<input type="button" onclick="linMotion2()" value="Calculate">
                 </div><br>
                 <div class="equation">
-                    <label class="data-inp">Displacement<br><input type="text" class="num"></label>m =
-                    <label class="data-inp">Inital Velocity<br><input type="text" class="num"></label>m/s * 
-                    <label class="data-inp">Time<br><input type="text" class="num"></label>s + 
-                    <label class="data-inp">Acceleration<br><input type="text" class="num"></label> m/s/s *
-                    <label class="data-inp">Time<br><input type="text" class="num"></label>s ^2
+                    <label class="data-inp">Displacement<br><input id="displacement" type="text" class="num"></label>m =
+                    <label class="data-inp">Inital Velocity<br><input id="initVelo3" type="text" class="num"></label>m/s * 
+                    <label class="data-inp">Time<br><input id="time5" type="text" class="num"></label>s + 1/2
+                    <label class="data-inp">Acceleration<br><input id="accel2" type="text" class="num"></label> m/s/s *
+					
+                    <label class="data-inp">Time<br><input style="background-color: #CCCCCC;" id="time6" type="text" class="num" readonly></label>s ^2
+					&nbsp&nbsp
+					<input type="button" onclick="linMotion3()" value="Calculate">
                 </div>
+				<script>
+					const distance3 = document.getElementById("distance3");
+					const velo1 = document.getElementById("velo1");
+					const time3 = document.getElementById("time3");
+					function linMotion1()
+					{
+						if(isNaN(velo1.value) || velo1.value == "")
+						{
+							var values = parseFloat(distance3.value) / parseFloat(time3.value);
+							velo1.value = values;
+						}
+						else if(isNaN(time3.value) || time3.value == "")
+						{
+							var values = parseFloat(distance3.value) / parseFloat(velo1.value);
+							time3.value = values;
+						}
+						else
+						{
+							var values = parseFloat(velo1.value) * parseFloat(time3.value);
+							distance3.value = values;
+						}
+					}
+					
+					const velo2 = document.getElementById("velo2");
+					const initVelo2 = document.getElementById("initVelo2");
+					const accel1 = document.getElementById("accel1");
+					const time4 = document.getElementById("time4");
+					function linMotion2()
+					{
+						if(isNaN(initVelo2.value) || initVelo2.value == "")
+						{
+							var values = parseFloat(velo2.value) - parseFloat(accel1.value) * parseFloat(time4.value);
+							initVelo2.value = values;
+						}
+						else if(isNaN(accel1.value) || accel1.value == "")
+						{
+							var values = (parseFloat(velo2.value) - parseFloat(initVelo2.value)) / parseFloat(time4.value);
+							accel1.value = values;
+						}
+						else if(isNaN(time4.value) || time4.value == "")
+						{
+							var values = (parseFloat(velo2.value) - parseFloat(initVelo2.value)) / parseFloat(accel1.value);
+							time4.value = values;
+						}
+						else
+						{
+							var values = parseFloat(initVelo2.value) + parseFloat(accel1.value) * parseFloat(time4.value);
+							velo2.value = values;
+						}
+					}
+					
+					const displacement = document.getElementById("displacement");
+					const initVelo3 = document.getElementById("initVelo3");
+					const time5 = document.getElementById("time5");
+					const accel2 = document.getElementById("accel2");
+					const time6 = document.getElementById("time6");
+					function linMotion3()
+					{
+						time6.value = time5.value;
+						
+						if(isNaN(initVelo3.value) || initVelo3.value == "")
+						{
+							var values = (parseFloat(displacement.value) - parseFloat(accel2.value) * parseFloat(time5.value)**2 / 2) / parseFloat(time5.value);
+							initVelo3.value = values;
+						}
+						else if(isNaN(time5.value) || time5.value == "")
+						{
+							time5.value = "quadratic";
+							time6.value = "quadratic";
+						}
+						else if(isNaN(accel2.value) || accel2.value == "")
+						{
+							var values = (parseFloat(displacement.value) - parseFloat(initVelo3.value) * parseFloat(time5.value)) / parseFloat(time5.value)**2 * 2;
+							accel2.value = values;
+						}
+						else
+						{
+							var values = parseFloat(initVelo3.value) * parseFloat(time5.value) + parseFloat(accel2.value) * parseFloat(time5.value)**2 / 2;
+							displacement.value = values;
+						}
+					}
+				</script>
             </div>
 
             <span class="anchor" id="comments-on-motion"></span>
@@ -201,5 +341,5 @@
                 <p>In the example calculation, the time, initial velocity, and displacement were considered given (primary) unless they were being calculated . For example,if x is being calculated, then v is assumed given, so it must be calculated first if you want to specify a. After making substitutions, not all values are updated, so to be sure a specific parameter has been updated, click on the text or symbol associated with that parameter.</p>
             </div>
         </div>
-    </body>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6db56f8e6d908e2c',m:'zX5M0AIvNKSpUHEOUvDdgXgFYDSuV1EKtjOtHmcIEog-1644497138-0-AaEFiaJfT+jdqEVp5/iHIYi4zKYFMXlzF1jeuD/MbAfLN20jyD+3nMGde/qt35dt3RCH+KLY9VyyWFww3RZwTeulJklSSMc0ZNfE1Fn07K2NB/fwV3WbgFywQmGKpK5vawOJgTivAtb3Y5/3DzRQ6hDoxnOlEVQ5i++J1Aw2U3WW++GJqkmD/sIotPEitXEEGF3j99n59yDsayLYQaPfZ4KjVMFIAEXcBpODHUr+bZua',s:[0x650e298057,0x14fc8d5c25],}})();</script></body>
 </html>
