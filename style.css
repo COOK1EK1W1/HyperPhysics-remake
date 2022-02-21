@@ -29,10 +29,9 @@ img{
 
 a{
     transition: 0.2s;
-}
-a:link, a:visited{
     text-decoration: none;
     color: rgb(64, 64, 255);
+    cursor: pointer;
 }
 
 a:hover{
