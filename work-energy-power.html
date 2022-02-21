@@ -8,7 +8,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="menu-nav.css"/>
-        <link rel="stylesheet" href="home.css"/>
         <script src="init.js"></script>
     </head>
     <body>
@@ -43,7 +42,7 @@
                             <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/torq.html#torq">Torques</a></li>
                             <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/vect.html#veccon">Vector Operations</a></li>
                             <li><a href="Velocity-and-acceleration.html">* Velocity and Acceleration</a></li>
-                            <li><a href="work-energy-power.html">Work, Energy and Power</a></li>
+                            <li><a href="work-energy-power.html">* Work, Energy and Power</a></li>
                         </ul>
                     </li>
                     <li><span class="arrow">Electricity and Magnetism</span>
@@ -96,30 +95,49 @@
         </nav>
         <div class="grey-out" id="grey-out" onclick="toggleMenu()"></div>
         <div class="content" id="content"><!-- common-->
-            <div class="card card-title">
-                <h1>Welcome to<br>HyperPhysics</h1>
-                <img src="logo-400x400.png" class=big-logo>
-            </div>
+            <h1>Work, Energy and Power</h1>
+            <div class="root">
+                <a class="inline-link" href="index.html">HyperPhysics</a>
+                > 
+                <a class="inline-link" href="#">Mechanics</a>
+                > 
+                <a class="inline-link" href="#">Work, Energy and Motion</a>
+            </div><!-- template common-->
+
             <div class="card">
-                
-                <h2>Rational for Development</h2>
-                <p>
-                    HyperPhysics is an exploration environment for concepts in physics which employs concept maps and other linking strategies to facilitate smooth navigation. For the most part, it is laid out in small segments or "cards", true to its original development in HyperCard. The entire environment is interconnected with thousands of links, reminiscent of a neural network. The bottom bar of each card contains links to major concept maps for divisions of physics, plus a "go back" feature to allow you to retrace the path of an exploration. The side bar contains a link to the extensive Index, which itself is composed of active links. That sidebar also contains links to relevant concept maps. The rationale for such concept maps is to provide a visual survey of conceptually connected material, and it is hoped that they will provide some answers to the question "where do I go from here?". Whether you need further explanation of concepts which underly the current card content, or are seeking applications which go beyond it, the concept map may help you find the desired information.
-                    <br>
-                    <br>
-                    Part of the intent for this exploration environment is to provide many opportunities for numerical exploration in the form of active formuli and standard problems implemented in Javascript. An active exploration in physics will typically lead you to something which needs to be quantified, and it is hoped that the many Javascript-enabled calculations will provide many opportunities to answer "What if .." type questions.
-                    <br>
-                    <br>
-                    New content for HyperPhysics will be posted as it is developed. The intent is to maintain the entire HyperPhysics project on the Web with stable locations so that links to it may be established with confidence that they will be there for an extended period of time. As the basic phase nears completion, the author is interested in extensions to specific applied areas. If you are interested in developing specific material for a specialized course, you might consider building it upon this framework with links to HyperPhysics to provide the basic conceptual background. The entire HyperPhysics project can be made available on a cross-platform DVD or USB memory since it will remain compatible with the standard web browsers.
-                </p>
-            </div>
-            <div class="card">
-                <h2>Who is using HyperPhysics</h2>
-                <div class="sub-content">
-                    <img src="media/Worldredlab.png">
+                <h2>Work</h2>
+                <p>refers to an activity involving a <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/force.html#defor">force</a> and movement in the directon of the force. A force of 20 newtons pushing an object 5 meters in the direction of the force does 100 joules of work.</p>
+                <h2>Energy</h2>
+                <p>is the capacity for doing work. You must have energy to accomplish work - it is like the "currency" for performing work. To do 100 joules of work, you must expend 100 joules of energy.</p>
+                <h2>Power</h2>
+                <p>is the rate of doing work or the rate of using energy, which are numerically the same. If you do 100 joules of work in one second (using 100 joules of energy), the power is 100 watts.</p>
+                <div class="bubble-web">
+                    <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/wcon.html">Work Concepts</a>
+                    <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/enecon.html">Energy Concepts</a>
+                    <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/powcon.html">Power Concepts</a>
                 </div>
             </div>
-        </div>
 
+            <div class="card">
+                <h2>Work-Energy Principle</h2>
+                TODO image
+                <p><b>The change in the kinetic energy of an object is equal to the net work done on the object.</b></p>
+                <p>This fact is referred to as the Work-Energy Principle and is often a very useful tool in mechanics problem solving. It is derivable from <a href="conservation-laws.html#conservation-energy">conservation of energy</a> and the application of the relationships for <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/wcon.html">work</a> and <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/enecon.html">energy</a>, so it is not independent of the <a href="conservation-laws.html">conservation laws</a>. It is in fact a specific application of conservation of energy. However, there are so many mechanical problems which are solved efficiently by applying this principle that it merits separate attention as a working principle.</p>
+                <p>For a straight-line collision, the net work done is equal to the average force of impact times the distance traveled during the impact.</p>
+                <p><b>Average impact force x distance traveled = change in kinetic energy</b></p>
+                <p>If a moving object is stopped by a collision, extending the stopping distance will reduce the average impact force.</p>
+
+                <div class="bubble-web">
+                    <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/carcr.html#cc1">Car Crash Example</a>
+                    <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/seatb.html#cc1">Seatbelt Use</a>
+                    <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/crstp.html#c1">Auto Stopping Distance</a>
+                    <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/truckc.html#c1">Large Truch-Small Truck Collision</a>
+                    <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/truckc2.html#c1">Two Trucks, Equal Momentum</a>
+                    <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/flobj.html#c2">Impact Force of Falling Objects</a>
+                    <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/rotwe.html#we">Work-Energy principle for angular quantities</a>
+                </div>
+            </div>
+
+        </div>
     </body>
 </html>
