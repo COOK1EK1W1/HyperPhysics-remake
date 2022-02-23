@@ -51,7 +51,7 @@ window.onload = () => {
     });
     }
 
-    
+
     // hide all list items initially
     ul = document.getElementById("searchOptions"); //get unordered list
     li = ul.getElementsByTagName('li'); //get list items

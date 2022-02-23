@@ -153,9 +153,10 @@ ul{
 ul.nested>li>a{
     display: block;
     padding:10px;
+    transition: 0.3s;
 }
 ul.nested>li>a:hover{
-    transition: 0.3s;
+    transform: translate(-10px, 0px);
 }
 
 .arrow {
