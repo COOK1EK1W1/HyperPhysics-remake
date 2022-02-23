@@ -21,8 +21,67 @@
                 </div>
             
     
-                <input class="search-input" type="text" placeholder="search.." />
+                <input class="search-input" type="text" id="searchBar" onkeyup="searchFunction()" placeholder="search.." />
                 <a class="logo-link" href="index.html"><img class="small-logo" src="logo-40x40.png"></a>
+
+                <ul id="searchOptions">
+                    <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/circ.html#circ">Circular Motion</a></li>
+                    <li><a href="conservation-laws.html">* Conservation Laws</a></li>
+                    <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/force.html#defor">Forces</a></li>
+                    <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/fluid.html#flucon">Fluids</a></li>
+                    <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/grav.html#grav">Gravity</a></li>
+                    <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mass.html#mas">Mass</a></li>
+                    <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/newt.html#ntcon">Newton's Laws</a></li>
+                    <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/orbit.html#orbcon">Orbits</a></li>
+                    <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/permot.html#permot">Periodic Motion</a></li>
+                    <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/units.html#unit">Physical Units</a></li>
+                    <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/solcon.html#solcon">Solids</a></li>
+                    <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/torq.html#torq">Torques</a></li>
+                    <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/vect.html#veccon">Vector Operations</a></li>
+                    <li><a href="Velocity-and-acceleration.html">* Velocity and Acceleration</a></li>
+                    <li><a href="work-energy-power.html">Work, Energy and Power</a></li>
+                </ul>
+
+                <script>
+                    // hide all list items initially
+                    ul = document.getElementById("searchOptions"); //get unordered list
+                    li = ul.getElementsByTagName('li'); //get list items
+                    for (i = 0; i < li.length; i++)
+                    {
+                        li[i].style.display = "none";
+                    }
+
+                    function searchFunction() {
+                        // Declare variables
+                        var input, filter, ul, li, a, i, txtValue;
+                        input = document.getElementById('searchBar');
+                        filter = input.value.toUpperCase();
+                        ul = document.getElementById("searchOptions"); //get unordered list
+                        li = ul.getElementsByTagName('li'); //get list items
+                    
+                        // Loop through all list items, and hide those who don't match the search query
+                        for (i = 0; i < li.length; i++)
+                        {
+                            a = li[i].getElementsByTagName("a")[0]; //get hyperlinks
+                            txtValue = a.innerText;
+                            
+                            if (txtValue.toUpperCase().indexOf(filter) > -1)
+                            {
+                                li[i].style.display = "";
+                                console.log("pog");
+                            }
+                            else 
+                            {
+                                li[i].style.display = "none";
+                            }
+
+                            if(input.value.length == 0)
+                            {
+                                li[i].style.display = "none";
+                            }
+                        }
+                    }
+                </script>
             </div>
             <div class="slide-menu" id="slide-menu">
                 <h2 class="home-link">Topics</h2>
@@ -32,7 +91,7 @@
                             <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/circ.html#circ">Circular Motion</a></li>
                             <li><a href="conservation-laws.html">* Conservation Laws</a></li>
                             <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/force.html#defor">Forces</a></li>
-                            <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/fluid.html#flucon">Fuilds</a></li>
+                            <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/fluid.html#flucon">Fluids</a></li>
                             <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/grav.html#grav">Gravity</a></li>
                             <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mass.html#mas">Mass</a></li>
                             <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/newt.html#ntcon">Newton's Laws</a></li>
