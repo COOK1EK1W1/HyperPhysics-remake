@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="menu-nav.css"/>
         <script src="init.js"></script>
+        <script src="search.js"></script>
     </head>
     <body>
         <nav>
@@ -19,8 +20,28 @@
                     <div></div>
                 </div>
             
-    
-                <input class="search-input" type="text" placeholder="search.." />
+                <div class="search">
+                    <input class="search-input" type="text" id="searchBar" onkeyup="searchFunction()" placeholder="search.." />
+                    
+
+                    <ul class="searchOptions" id="searchOptions">
+                        <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/circ.html#circ">Circular Motion</a></li>
+                        <li><a href="conservation-laws.html">* Conservation Laws</a></li>
+                        <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/force.html#defor">Forces</a></li>
+                        <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/fluid.html#flucon">Fluids</a></li>
+                        <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/grav.html#grav">Gravity</a></li>
+                        <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mass.html#mas">Mass</a></li>
+                        <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/newt.html#ntcon">Newton's Laws</a></li>
+                        <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/orbit.html#orbcon">Orbits</a></li>
+                        <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/permot.html#permot">Periodic Motion</a></li>
+                        <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/units.html#unit">Physical Units</a></li>
+                        <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/solcon.html#solcon">Solids</a></li>
+                        <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/torq.html#torq">Torques</a></li>
+                        <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/vect.html#veccon">Vector Operations</a></li>
+                        <li><a href="Velocity-and-acceleration.html">* Velocity and Acceleration</a></li>
+                        <li><a href="work-energy-power.html">* Work, Energy and Power</a></li>
+                    </ul>
+                </div>
                 <a class="logo-link" href="index.html"><img class="small-logo" src="logo-40x40.png"></a>
             </div>
             <div class="slide-menu" id="slide-menu">
@@ -31,7 +52,7 @@
                             <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/circ.html#circ">Circular Motion</a></li>
                             <li><a href="conservation-laws.html">* Conservation Laws</a></li>
                             <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/force.html#defor">Forces</a></li>
-                            <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/fluid.html#flucon">Fuilds</a></li>
+                            <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/fluid.html#flucon">Fluids</a></li>
                             <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/grav.html#grav">Gravity</a></li>
                             <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mass.html#mas">Mass</a></li>
                             <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/newt.html#ntcon">Newton's Laws</a></li>

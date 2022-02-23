@@ -36,21 +36,6 @@ ul{
 .nav-top-bar > *{
     float: left;
 }
-  
-#searchOptions li a {
-    border: 1px solid #ddd;
-    margin-top: -1px;
-    background-color: #f6f6f6;
-    padding: 10px;
-    text-decoration: none;
-    font-size: 18px;
-    color: black;
-    display: block;
-}
-  
-#searchOptions li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
-}
 
 .hamburger{
     width:40px;
@@ -79,11 +64,39 @@ ul{
 }
 
 .search-input{
-    margin: 15px;
     height: 30px;
-    width: 40%;
+    width: 100%;
     border:none;
     border-radius:5px;
+}
+
+.search{
+    margin: 15px;
+    width: 40%
+}
+
+.searchOptions{
+    position: fixed;
+    width: 40%;
+    z-index: 1;
+    padding-left: 0%;
+    margin-top: 5px;
+    padding-left: 2px;
+}
+  
+#searchOptions li a {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: #f6f6f6;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+}
+  
+#searchOptions li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
 }
 
 .small-logo{
