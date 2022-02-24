@@ -126,102 +126,49 @@
         </nav>
         <div class="grey-out" id="grey-out" onclick="toggleMenu()"></div>
         <div class="content" id="content"><!-- common-->
-            <h1>Conservation Laws</h1>
+            <h1>Work, Energy and Power</h1>
             <div class="root">
-                <a href="index.html">HyperPhysics</a>
+                <a class="inline-link" href="index.html">HyperPhysics</a>
                 > 
                 <a onclick="openMenuWith('menu-cat-mechanics')">Mechanics</a>
                 > 
-                <a href="#">Conservation Laws</a>
+                <a class="inline-link" href="#">Work, Energy and Motion</a>
             </div><!-- template common-->
 
-            <span class="anchor" id="conservation-laws"></span>
             <div class="card">
-                <h2>Conservation Laws</h2>
-                <p>If a system does not interact with its environment in any way, then certain mechanical properties of the system cannot change. They are sometimes called "constants of the motion". These quantities are said to be "conserved" and the conservation laws which result can be considered to be the most fundamental principles of mechanics. In mechanics, examples of conserved quantities are energy, momentum, and angular momentum. The conservation laws are exact for an 
-                    <a href ="#isolated-system">isolated system</a>.
-                </p>
-                <h3>Fundamental Principles</h3>
+                <h2>Work</h2>
+                <p>refers to an activity involving a <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/force.html#defor">force</a> and movement in the directon of the force. A force of 20 newtons pushing an object 5 meters in the direction of the force does 100 joules of work.</p>
+                <h2>Energy</h2>
+                <p>is the capacity for doing work. You must have energy to accomplish work - it is like the "currency" for performing work. To do 100 joules of work, you must expend 100 joules of energy.</p>
+                <h2>Power</h2>
+                <p>is the rate of doing work or the rate of using energy, which are numerically the same. If you do 100 joules of work in one second (using 100 joules of energy), the power is 100 watts.</p>
                 <div class="bubble-web">
-                    <a class="button-link" href="#conservation-momentum">Conservation of Momentum</a>
-                    <a class="button-link" href="#conservation-energy">Conservation of Energy</a>
-                    <a class="button-link" href="#conservation-angular">Conservation of Angular Momentum</a>
+                    <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/wcon.html">Work Concepts</a>
+                    <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/enecon.html">Energy Concepts</a>
+                    <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/powcon.html">Power Concepts</a>
                 </div>
-                <p>Stated here as principles of mechanics, these conservation laws have far-reaching implications as symmetries of nature which we do not see violated. They serve as a strong constraint on any theory in any branch of science. There are other types of 
-                     <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/particles/parint.html#c1">conservation laws</a> that govern the behavior of nature in the quantum realm.</p>
             </div>
 
-            <span class="anchor" id="conservation-momentum"></span>
             <div class="card">
-                <h2>Conservation of Momentum</h2>
-                <p>The <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mom.html#mom">momentum</a> of an <a href="#isolated-system">isolated system</a> is a constant. The vector sum of the momenta mv of all the objects of a system cannot be changed by interactions within the system. This puts a strong constraint on the types of motions which can occur in an isolated system. If one part of the system is given a momentum in a given direction, then some other part or parts of the system must simultaneously be given exactly the same momentum in the opposite direction. As far as we can tell, conservation of momentum is an absolute symmetry of nature. That is, we do not know of anything in nature that violates it.</p>
+                <h2>Work-Energy Principle</h2>
+                TODO image
+                <p><b>The change in the kinetic energy of an object is equal to the net work done on the object.</b></p>
+                <p>This fact is referred to as the Work-Energy Principle and is often a very useful tool in mechanics problem solving. It is derivable from <a href="conservation-laws.html#conservation-energy">conservation of energy</a> and the application of the relationships for <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/wcon.html">work</a> and <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/enecon.html">energy</a>, so it is not independent of the <a href="conservation-laws.html">conservation laws</a>. It is in fact a specific application of conservation of energy. However, there are so many mechanical problems which are solved efficiently by applying this principle that it merits separate attention as a working principle.</p>
+                <p>For a straight-line collision, the net work done is equal to the average force of impact times the distance traveled during the impact.</p>
+                <p><b>Average impact force x distance traveled = change in kinetic energy</b></p>
+                <p>If a moving object is stopped by a collision, extending the stopping distance will reduce the average impact force.</p>
+
                 <div class="bubble-web">
-                    <label>Is a tool for analysing<a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/colcon.html#c1">Collisions</a></label>
-                    <label>Applies to<a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/conser.html#conmom">Momentum</a></label>
-                    <label>Allows momentum changes for<a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/rocket.html#c1">Systems with External Focrces</a></label>
+                    <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/carcr.html#cc1">Car Crash Example</a>
+                    <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/seatb.html#cc1">Seatbelt Use</a>
+                    <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/crstp.html#c1">Auto Stopping Distance</a>
+                    <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/truckc.html#c1">Large Truch-Small Truck Collision</a>
+                    <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/truckc2.html#c1">Two Trucks, Equal Momentum</a>
+                    <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/flobj.html#c2">Impact Force of Falling Objects</a>
+                    <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/rotwe.html#we">Work-Energy principle for angular quantities</a>
                 </div>
             </div>
 
-            <span class="anchor" id="conservation-energy"></span>
-            <div class="card">
-                <h2>Conservation of Energy</h2>
-                <p>Energy can be defined as the capacity for doing <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/wcon.html">work</a>. It may exist in a variety of forms and may be transformed from one type of energy to another. However, these energy transformations are constrained by a fundamental principle, the Conservation of Energy principle. One way to state this principle is "Energy can neither be created nor destroyed". Another approach is to say that the total energy of an <a href="#isolated-system">isolated system</a> remains constant.</p>
-                <div class="bubble-web">
-                    <label>Einstein's Caveat:<a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/relativ/releng.html#c1">Mass Energy</a></label>
-                    <label>A powerful tool for:<a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/flobj.html#c1">Mechanics problem Solving</a></label>
-                    <label>With external forces:<a class="button-link" href="work-energy-power.html">Work Energy Principle</a></label>
-                </div>
-            </div>
-
-            <span class="anchor" id="cconservation-energy-fundamental"></span>
-            <div class="card">
-                <h2>Conservation of Energy as a Fundamental Principle</h2>
-                <p>The <a href="#conservation-energy">conservation of energy</a> principle is one of the foundation principles of all science disciplines. In varied areas of science there will be primary equations which can be seen to be just an appropriate reformulation of the principle of conservation of energy.</p>
-                <div class="sub-content">
-                    <table>
-                        <tr>
-                            <td>Fluids</td>
-                            <td><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/pber.html#beq">Bernolli equation</a></td>
-                        </tr>
-                        <tr>
-                            <td>Electic Circuits</td>
-                            <td><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/electric/ohmlaw.html#c2">Voltage Law</a></td>
-                        </tr>
-                        <tr>
-                            <td>Heat and Thermodynamics</td>
-                            <td><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/thermo/firlaw.html#c1">First Law of Thermodynamics</a></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-
-            <span class="anchor" id="conservation-angular"></span>
-            <div class="card">
-                <h2>Conservation of Angular Momentum</h2>
-                <p>The <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/amom.html#am">angular momentum</a> of an <a href="#isolated-system">isolated system</a> remains constant in both magnitude and direction. The angular momentum is defined as the product of the <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mi.html#mi">moment of inertia</a> I and the <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/rotq.html#avel">angular velocity</a>. The angular momentum is a <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/rotv.html#rvec2">vector quantity</a> and the vector sum of the angular momenta of the parts of an isolated system is constant. This puts a strong constraint on the types of rotational motions which can occur in an isolated system. If one part of the system is given an angular momentum in a given direction, then some other part or parts of the system must simultaneously be given exactly the same angular momentum in the opposite direction. As far as we can tell, conservation of angular momentum is an absolute symmetry of nature. That is, we do not know of anything in nature that violates it.</p>
-                <div class="bubble-web">
-                    <label>Applies to<a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/amom.html#am">Angular Momentum</a></label>
-                    <label>aids analysis of<a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/circ.html#rotcon">Rotating Objects</a></label>
-                    <label>Involves<a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/rotv.html#rvec2">Vector Properties</a></label>
-                </div>
-                <hr>
-                <a class="button-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/rstoo.html#sm">Rotating Stool Example</a>
-            </div>
-
-            <span class="anchor" id="isolated-system"></span>
-            <div class="card">
-                <h2>An Isolated System</h2>
-                <p>An isolated system implies a collection of matter which does not interact with the rest of the universe at all - and as far as we know there are really no such systems. There is no shield against <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/force.html#grav">gravity</a>, and the <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/forces/funfor.html#c3">electromagnetic force</a> is infinite in range. But in order to focus on basic principles, it is useful to postulate such a system to clarify the nature of physical laws. In particular, the conservation laws can be presumed to be exact when referring to an isolated system:</p>
-                <div class="sub-content">
-                    <p><a href="#conservation-energy">Conservation of Energy</a>: the total energy of the system is constant.</p>
-                    <p><a href="#conservation-momentum">Conservation of Momentum</a>: the mass times the velocity of the center of mass is constant.</p>
-                    <p><a href="#conservation-angular">Conservation of Angular Momentum</a>: the mass times the velocity of the center of mass is constant.</p>
-                    <p><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/newt.html#nt3">Newton's Third Law</a>: No net force can be generated within the system since all internal forces occur in opposing pairs. The acceleration of the center of mass is zero.</p>
-                </div>
-
-            </div>
-            
         </div>
     </body>
-    
 </html>
