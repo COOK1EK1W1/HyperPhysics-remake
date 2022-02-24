@@ -28,20 +28,18 @@ img{
 }
 
 a{
-    transition: 0.2s;
-}
-a:link, a:visited{
     text-decoration: none;
     color: rgb(64, 64, 255);
+    cursor: pointer;
 }
 
 a:hover{
     text-decoration: underline;
-    transform: scale(1.02);
 }
 
 
 .button-link{
+    transition: 0.2s;
     padding:10px;
     background-color: lightgrey;
     margin:2px;
@@ -51,6 +49,10 @@ a:hover{
     border-radius: 20px;
     display:block;
     box-shadow: 1px 1px 3px #888888;
+}
+
+.button-link:hover{
+    transform: scale(1.02);
 }
 
 .content{
@@ -119,6 +121,9 @@ a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+.bubble-web>*{
+    margin-top: 10px;
 }
 
 @media (max-width: 700px) {
