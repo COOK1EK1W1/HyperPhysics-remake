@@ -51,14 +51,32 @@ window.onload = () => {
     });
     }
 
-
     // hide all list items initially
+    var ul, li, i;
     ul = document.getElementById("searchOptions"); //get unordered list
     li = ul.getElementsByTagName('li'); //get list items
     for (i = 0; i < li.length; i++)
     {
         li[i].style.display = "none";
     }
+
+    // hide items when searchbar deselected
+    var input;
+    input = document.getElementById('searchBar');
+    input.addEventListener("blur", function()
+    {
+        setTimeout(function() //add 150ms delay so user has time to click link before disappearing
+        {     
+            // hide all list items
+            var ul, li, i;
+            ul = document.getElementById("searchOptions"); //get unordered list
+            li = ul.getElementsByTagName('li'); //get list items
+            for (i = 0; i < li.length; i++)
+            {
+                li[i].style.display = "none";
+            }
+        }, 150);
+    });
 }
 
 
